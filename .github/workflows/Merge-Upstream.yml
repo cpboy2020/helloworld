@@ -46,8 +46,11 @@ jobs:
         #git pull https://github.com/fw876/helloworld.git --no-edit --strategy-option ours
         #git pull https://github.com/fw876/helloworld.git --no-edit --ff-only
         #git pull https://github.com/frainzy1477/luci-app-clash.git --ff-only
-        #git clone https://github.com/frainzy1477/luci-app-clash.git
-        git submodule add https://github.com/frainzy1477/luci-app-clash.git
+        mkdir luci-app-clash
+        cd luci-app-clash
+        git clone https://github.com/frainzy1477/luci-app-clash.git
+        #git submodule add https://github.com/frainzy1477/luci-app-clash.git
+        #git remote add upstream https://github.com/octocat/Spoon-Knife.git
 
     - name: 推送上游提交
       env:
