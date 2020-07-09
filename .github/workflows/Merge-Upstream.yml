@@ -46,7 +46,7 @@ jobs:
       git pull https://github.com/fw876/helloworld.git --no-edit --strategy-option ours
       git pull https://github.com/frainzy1477/luci-app-clash.git  --no-edit --strategy-option ours
 
-    #- name: 推送上游提交
-      #env:
-        #DOWNSTREAM_BRANCH: master
-      #run: git push origin $DOWNSTREAM_BRANCH
+    - name: 推送上游提交
+      env:
+        DOWNSTREAM_BRANCH: master
+      run: git push origin $DOWNSTREAM_BRANCH
