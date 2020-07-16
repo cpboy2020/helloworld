@@ -38,7 +38,7 @@ jobs:
 
     - name: 设置git身份
       run : |
-        git config --global user.email "cpboy2020@163.com"
+        git config --global user.email "66666045+cpboy2020@users.noreply.github.com"
         git config --global user.name "cpboy2020"
 
     - name: 加载上游提交
